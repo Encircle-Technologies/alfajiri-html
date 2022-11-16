@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Alfajiri - HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/images/favicon.png" type="">
+    <!-- General style -->
+    
+    <link href="../assets/css/dist/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Red+Rose:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body class="tech-front">
+
+   <div class="viewport">
+    <div class="scroll-container" id="scroll-container" data-scroll-container>
+
+        <!-- Header start -->
+        <header class="header absolute w-full top-30 md:top-46 h-auto left-0 z-999">
+            <div class="header-navbar m-auto px-20 md:px-50 xl:px-75">
+                <nav class="navbar flex items-center relative flex-wrap justify-between">
+                    <div class="menu-icon flex justify-end md:justify-start flex-1 order-1 md:order-none">
+                        <div class="navbar-icon cursor-pointer hamburger menu-open-test">
+                            <span class="line w-28 mx-auto"></span>
+                            <span class="line line-middle w-37"></span>
+                            <span class="line w-28 mx-auto"></span>
+                        </div>
+                    </div>
+                    <div class="navbar-brand flex-1">
+                        <a href="index.html" class="block">
+                            <img src="../assets/images/logo.png" class="block md:mx-auto max-w-logo" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse justify-end hidden flex-1 md:flex items-center">
+                        <div class="navbar-button">
+                            <a href="#" class="button button-white !px-24 !text-15">
+                                <span>book</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    
+        <div class="main-nav nav-container pointer-events-none fixed z-99 h-screen w-full bg-primary bg-opacity-30 transform translate-x-minus_100 pt-120 md:pt-0">
+            <div class="menu-overlay h-full fixed w-full top-0 left-0 bg-primary_dark"></div>
+            <div class="main-nav__wrap px-20 md:px-50 xl:px-75 relative m-auto z-99 h-full flex justify-center items-start md:items-center overflow-y-auto pb-50 md:pb-0">
+                <div class="flex flex-wrap justify-center w-full">
+                    <div class="main-nav__col hover-underline-solid  flex flex-col">
+                        <ul class="main-nav_menu">
+                            <li><a href="experiences.html">Experience</a></li>
+                            <li><a href="stay-listing.html">The Villas</a></li>
+                            <li><a href="location.html">Destination</a></li>
+                            <li><a href="our-story.html">Our Story</a></li>
+                            <li><a href="packages.html">Offers</a></li>
+                            <li><a href="rates.html">Rates</a></li>
+                            <li><a href="#">Blog </a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-nav__col nav-col-bottom hover-underline-solid flex flex-col relative md:absolute md:bottom-40 w-full left-0 justify-center mt-30 md:mt-0">
+                        <ul class="main-nav_menu flex justify-center flex-col md:flex-row">
+                            <li><a href="#">Cliff</a></li>
+                            <li><a href="#">Garden</a></li>
+                            <li><a href="#">Beach</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-nav__col flex md:hidden mt-45 md:mt-0">
+                        <div class="navbar-button">
+                            <a href="#" class="button button-white !px-24 !text-15">
+                                <span>book</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header end -->
+    
+        <!-- banner start -->
+        <section class="banner h-screen z-10 overflow-hidden relative parallax-main">
+            <div class="banner-opacity h-full bg-black bg-opacity-40 w-full absolute top-0 left-0 z-98"></div>
+            <div class="banner-img h-full absolute parallax-inner top-0 left-0 w-full">
+                <img src="../assets/images/banner-1.jpg" class="block object-cover h-full w-full" alt="">
+            </div>
+            <div class="container_d h-full">
+                <div class="banner-inner h-full flex items-end pb-60 md:pb-90 px-20 md:px-50 xl:px-75 relative z-98">
+                    <div class="bg-opacity absolute bottom-0 left-0 w-full h-2/5 rotate-180"></div>
+                    <div class="flex flex-wrap justify-start w-full">
+                        <div class="w-full lg:w-4/12 px-15">
+                            <div class="banner-content text-left  fadeinup" >
+                                <div class="banner-title">
+                                    <h1 class="text-white text-32 md:text-40">The Villas</h1>
+                                </div>
+                                <div class="content content-white content-small mt-20">
+                                    <p>The perfect combination of barefoot luxury and<br> exclusivity for romantic getaways or family adventures.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner end -->
+
+        <!-- Inner content start -->
+        <div class="inner-main relative" id="stay-villa">
+        </div>
+            <div class="hidden md:block h-full fixed top-0 right-40 md:right-70 pr-10 z-9 w-max border-0 border-r border-solid border-black">
+                <ul class="stay-indicator c-indicator flex justify-end flex-wrap pt-60  top-50">
+                    <li class="w-full text-right active"><a class="text-black font-heading transition-all duration-500 font-light text-11 text-right" href="#cliff" data-scroll-to>CLIFF</a></li>
+                    <li class="w-full text-right"><a class="text-black font-heading transition-all duration-500 font-light text-11 text-right" href="#garden" data-scroll-to>GARDEN</a></li>
+                    <li class="w-full text-right"><a class="text-black font-heading transition-all duration-500 font-light text-11 text-right" href="#beach" data-scroll-to>BEACH</a></li>
+                </ul>
+            </div>    
+
+            <section class="stay-item" id="cliff">
+                <div class="stay-item-inner">
+                    <div class="stay-item-image">
+                        <img src="../assets/images/banner-5.jpg" class="block w-full" alt="">
+                    </div>
+                    <div class="zigzag py-60 lg:py-80">
+                        <div class="flex flex-wrap items-center w-full">
+                            <div class="w-full lg:w-7/12 order-none lg:order-2">
+                                <div class="zigzag-slider-container overflow-hidden relative">
+                                    <div class="zigzag-slider swiper-wrapper fadeinup" >
+                                        <div class="zigzag-slider-item swiper-slide w-full">
+                                            <img src="../assets/images/i-2.jpg" class="w-full block" alt="">
+                                        </div>
+                                        <div class="zigzag-slider-item swiper-slide w-full">
+                                            <img src="../assets/images/i-2.jpg" class="w-full block" alt="">
+                                        </div>
+                                        <div class="zigzag-slider-item swiper-slide w-full">
+                                            <img src="../assets/images/i-2.jpg" class="w-full block" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide-arrow arrow-bottom">
+                                        <div class="swiper-button-prev">
+                                            <img src="../assets/images/prev.svg" alt="">
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="../assets/images/next.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-5/12">
+                                <div class="zigzag-content mt-30 lg:mt-0 px-20 lg:pl-50 xl:pl-75 lg:pr-0  fadeinup" >
+                                    <div class="zigzag-content-inner max-w-full lg:max-w-340 mr-auto">
+                                        <h2 class="h2">Cliff Villa</h2>
+                                        <div class="content content-small opacity-85 mt-15">
+                                            <p>Alfajiri Cliff Villa boasts impressive views of the Indian Ocean and offers the ultimate privacy from its elevated position on a coral cliff. Consisting of four spacious bedrooms, the villa is perfectly suited to honeymooners or groups of up to 9 guests. Unique features include the opulent Turret Suite which has been rated as one of the most romantic bedrooms in the world and an infinity pool that seamlessly merges with the ocean.</p>
+                                        </div>
+                                        <a href="#" class="button mt-30 md:mt-40">
+                                            <span>explore</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="stay-item" id="garden">
+                <div class="stay-item-inner">
+                    <div class="stay-item-image">
+                        <img src="../assets/images/banner-3.jpg" class="block w-full" alt="">
+                    </div>
+                    <div class="zigzag py-60 lg:py-80">
+                        <div class="flex flex-wrap items-center w-full">
+                            <div class="w-full lg:w-7/12 order-none lg:order-2">
+                                <div class="zigzag-slider-container overflow-hidden relative">
+                                    <div class="zigzag-slider swiper-wrapper fadeinup" >
+                                        <div class="zigzag-slider-item swiper-slide w-full">
+                                            <img src="../assets/images/i-3.jpg" class="w-full block" alt="">
+                                        </div>
+                                        <div class="zigzag-slider-item swiper-slide w-full">
+                                            <img src="../assets/images/i-3.jpg" class="w-full block" alt="">
+                                        </div>
+                                        <div class="zigzag-slider-item swiper-slide w-full">
+                                            <img src="../assets/images/i-3.jpg" class="w-full block" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide-arrow arrow-bottom">
+                                        <div class="swiper-button-prev">
+                                            <img src="../assets/images/prev.svg" alt="">
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="../assets/images/next.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-5/12">
+                                <div class="zigzag-content mt-30 lg:mt-0 px-20 lg:pl-50 xl:pl-75 lg:pr-0  fadeinup" >
+                                    <div class="zigzag-content-inner max-w-full lg:max-w-340 mr-auto">
+                                        <h2 class="h2">Garden Villa</h2>
+                                        <div class="content content-small opacity-85 mt-15">
+                                            <p>Surrounded by lush tropical greenery and an expansive garden flowing onto an intimate beach setting, Alfajiri Garden Villa accommodates up to 10 guests. Featuring four luxurious en-suite bedrooms (each uniquely curated), a large verandah, an infinity pool and jacuzzi, this is the ideal option for couples or two smaller 
+                                                families traveling together.</p>
+                                        </div>
+                                        <a href="#" class="button mt-30 md:mt-40">
+                                            <span>explore</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="stay-item" id="beach">
+                <div class="stay-item-inner">
+                    <div class="stay-item-image">
+                        <img src="../assets/images/banner-4.jpg" class="block w-full" alt="">
+                    </div>
+                    <div class="zigzag py-60 lg:py-80">
+                        <div class="flex flex-wrap items-center w-full">
+                            <div class="w-full lg:w-7/12 order-none lg:order-2">
+                                <div class="zigzag-slider-container overflow-hidden relative">
+                                    <div class="zigzag-slider swiper-wrapper fadeinup" >
+                                        <div class="zigzag-slider-item swiper-slide w-full">
+                                            <img src="../assets/images/i-4.jpg" class="w-full block" alt="">
+                                        </div>
+                                        <div class="zigzag-slider-item swiper-slide w-full">
+                                            <img src="../assets/images/i-4.jpg" class="w-full block" alt="">
+                                        </div>
+                                        <div class="zigzag-slider-item swiper-slide w-full">
+                                            <img src="../assets/images/i-4.jpg" class="w-full block" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide-arrow arrow-bottom">
+                                        <div class="swiper-button-prev">
+                                            <img src="../assets/images/prev.svg" alt="">
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="../assets/images/next.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-5/12">
+                                <div class="zigzag-content mt-30 lg:mt-0 px-20 lg:pl-50 xl:pl-75 lg:pr-0  fadeinup" >
+                                    <div class="zigzag-content-inner max-w-full lg:max-w-340 mr-auto">
+                                        <h2 class="h2">Beach Villa</h2>
+                                        <div class="content content-small opacity-85 mt-15">
+                                            <p>Located on the shores of Diani Beach, Alfajirii Beach Villa brings you to the water’s edge in a few easy steps from your verandah. Offering the ultimate beachfront living, the three-bedroom villa lies obscured between lush palm trees, providing an extra touch of privacy without compromising your ocean views. The ideal stay for up to 6 guests - families, friends or couples.</p>
+                                        </div>
+                                        <a href="#" class="button mt-30 md:mt-40">
+                                            <span>explore</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+        <!-- Inner content end -->
+    
+        <!-- Footer start -->
+        <footer class="footer bg-primary_dark relative z-9">
+            <div class="footer-top  bg-primary_light bg-opacity-40 pt-60 lg:pt-140">
+                <div class="container">
+                    <div class="footer-testimonials pb-60 lg:pb-90  fadeinup"   >
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full md:w-8/12 lg:w-6/12">
+                                <div class="single-slider overflow-hidden relative">
+                                    <div class="testimonials-slider swiper-wrapper">
+                                        <div class="testimonials-item swiper-slide">
+                                            <div class="testimonials-item-inner  text-center">
+                                                <p class="!text-16 md:!text-18 font-body !font-thin !text-white !leading-26 md:!leading-27">“Alfajiri Villas, a secluded, three-villa resort overlooking the azure waters of the Indian Ocean, until now a well-kept secret among luxury travelers. It's very much the kind of place that people in the know, know about.''
+                                                    </p>
+                                                <p class="!text-12 md:!text-14 font-body !font-thin !text-white mt-20 md:mt-30">- Sunday Telegraph</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonials-item swiper-slide">
+                                            <div class="testimonials-item-inner  text-center">
+                                                <p class="!text-16 md:!text-18 font-body !font-thin !text-white !leading-26 md:!leading-27">“Alfajiri Villas, a secluded, three-villa resort overlooking the azure waters of the Indian Ocean, until now a well-kept secret among luxury travelers. It's very much the kind of place that people in the know, know about.''
+                                                    </p>
+                                                <p class="!text-12 md:!text-14 font-body !font-thin !text-white mt-20 md:mt-30">- Sunday Telegraph</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-arrow arrow-bottom arrow-full">
+                                        <div class="swiper-button-prev">
+                                            <img src="../assets/images/prev.svg" alt="">
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="../assets/images/next.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-awards pb-60 md:pb-50  fadeinup" >
+                        <div class="awards-container overflow-hidden relative">
+                            <div class="awards-slider swiper-wrapper">
+                                <div class="awards-slider-item swiper-slide">
+                                    <img src="../assets/images/awards.svg" class="block max-w-57 mx-auto" alt="">
+                                </div>
+                                <div class="awards-slider-item swiper-slide">
+                                    <img src="../assets/images/awards.svg" class="block max-w-57 mx-auto" alt="">
+                                </div>
+                                <div class="awards-slider-item swiper-slide">
+                                    <img src="../assets/images/awards.svg" class="block max-w-57 mx-auto" alt="">
+                                </div>
+                                <div class="awards-slider-item swiper-slide">
+                                    <img src="../assets/images/awards.svg" class="block max-w-57 mx-auto" alt="">
+                                </div>
+                                <div class="awards-slider-item swiper-slide">
+                                    <img src="../assets/images/awards.svg" class="block max-w-57 mx-auto" alt="">
+                                </div>
+                                <div class="awards-slider-item swiper-slide">
+                                    <img src="../assets/images/awards.svg" class="block max-w-57 mx-auto" alt="">
+                                </div>
+                                <div class="awards-slider-item swiper-slide">
+                                    <img src="../assets/images/awards.svg" class="block max-w-57 mx-auto" alt="">
+                                </div>
+                                <div class="awards-slider-item swiper-slide">
+                                    <img src="../assets/images/awards.svg" class="block max-w-57 mx-auto" alt="">
+                                </div>
+                                <div class="awards-slider-item swiper-slide">
+                                    <img src="../assets/images/awards.svg" class="block max-w-57 mx-auto" alt="">
+                                </div>
+                            </div>
+                            <div class="slide-arrow arrow-between">
+                                <div class="swiper-button-prev">
+                                    <img src="../assets/images/prev.svg" alt="">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="../assets/images/next.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-main pt-40 lg:pt-140 pb-60 lg:pb-90">
+                <div class="container">
+                    <div class="footer-large-menu hover-underline-solid px-30  fadeinup"   >
+                        <ul class="flex justify-between flex-col md:flex-row items-center">
+                            <li class="stranger-slide"><a href="stay-listing.html">The Villas</a></li>
+                            <li class="stranger-slide"><a href="experiences.html">Experience</a></li>
+                            <li class="stranger-slide"><a href="location.html">Destination</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu hover-underline-solid mt-50 lg:mt-50 opacity-80  fadeinup"  >
+                        <ul class="flex flex-wrap justify-center">
+                            <li class="mb-15 stranger-slide md:mb-0 mx-5 md:mx-10 lg:mx-20"><a href="our-story.html">About</a></li>
+                            <li class="mb-15 stranger-slide md:mb-0 mx-5 md:mx-10 lg:mx-20"><a href="#">Packages</a></li>
+                            <li class="mb-15 stranger-slide md:mb-0 mx-5 md:mx-10 lg:mx-20"><a href="#">Rates</a></li>
+                            <li class="mb-15 stranger-slide md:mb-0 mx-5 md:mx-10 lg:mx-20"><a href="#">Gallery</a></li>
+                            <li class="mb-15 stranger-slide md:mb-0 mx-5 md:mx-10 lg:mx-20"><a href="#">Blog</a></li>
+                            <li class="mb-15 stranger-slide md:mb-0 mx-5 md:mx-10 lg:mx-20"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social mt-40 lg:mt-50  fadeinup stranger-slide" >
+                        <ul class="social flex justify-center">
+                            <li class="mx-5 px-2"><a href="#"><img src="../assets/images/Instagram.svg" alt=""></a></li>
+                            <li class="mx-5 px-2"><a href="#"><img src="../assets/images/Twitter.svg" alt=""></a></li>
+                            <li class="mx-5 px-2"><a href="#"><img src="../assets/images/Facebook.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright py-40 border-0 border-t border-solid border-offwhite border-opacity-10">
+                <div class="container">
+                    <div class="footer-copyright-inner flex flex-wrap flex-col md:flex-row justify-center opacity-40 hover-underline-solid">
+                        <p class="text-center md:text-left stranger-slide">All rights reserved 2021 Alfajiri</p>
+                        <ul class="flex justify-center md:justify-start ml-0 md:ml-30 mt-20 md:mt-0 flex-wrap">
+                            <li class="mb-10 stranger-slide md:mb-0 mx-5 md:mx-15"><a href="#">Privacy Policy</a></li>
+                            <li class="mb-10 stranger-slide md:mb-0 mx-5 md:mx-15"><a href="#">Terms & Conditions</a></li>
+                            <li class="mb-10 stranger-slide md:mb-0 mx-5 md:mx-15"><a href="#">Covid-19</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    
+        </div>
+   </div>
+   
+
+   <script type="text/javascript" src="../node_modules/gsap/dist/gsap.min.js"></script>
+   <script type="text/javascript" src="../node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+   <script type="text/javascript" src="../node_modules/gsap/dist/ScrollToPlugin.min.js"></script>
+   
+   <script type="text/javascript" src="../node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+   <script type="text/javascript"
+       src="../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+   
+   
+   <script type="text/javascript" src="../node_modules/swiper/swiper-bundle.min.js"></script>
+   <script src="https://kit.fontawesome.com/70f6bca6f4.js" crossorigin="anonymous"></script>
+   <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

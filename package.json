@@ -1,0 +1,27 @@
+{
+  "name": "alfajiri-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "gsap": "^3.7.1",
+    "lozad": "^1.16.0",
+    "postcss": "^8.3.6",
+    "swiper": "^7.3.1",
+    "tailwind": "^4.0.0",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "scripts": {
+    "build:css": "tailwind build assets/css/style.css -o assets/css/dist/style.css",
+    "watch": "watch 'npm run build:css' assets/css/style.css -o assets/css/dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
